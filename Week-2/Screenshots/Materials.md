@@ -121,5 +121,47 @@ Sum of all the activation function is up to 1. Because each of the activation fu
   We can train a single neural network to simultaneously detect all three of cars, buses, and pedestrians. The output  is going to be a vector of three numbers. We can use a sigmoid activation function for each of these three nodes in the output layer, corresponding to the output of cars, buses, and pedestrians.
 </p>
 
+# Additional Neural Network Concepts
+## Advanced Optimization
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/6e2e3a2e-37fe-456a-a410-72d1996d1d51">
+<p>
+  There are other optimization algorithms for minimizing the cost function, that are even better than gradient descent. <br>
+  The learning rate alpha in gradient descent is constant. If alpha is small, it just takes a little bit in our direction into the center of the ellipsis. <br>
+  Can we increase the alpha and get the minimum faster? Yes, Adam algorithm can do that.
+</p>
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/8bb16826-5b38-4243-b1ba-9d115e4c01f3">
+<p>
+  Adam algorithm doesn't use a single global learning rate Alpha. It uses a different learning rate for every single parameter of our model.
+</p>
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/81225700-6e4a-48bd-b883-689b5cbc2721">
+<p>
+  If a parameter seems to keep on moving in roughly the same direction, let's increase the learning rate for that parameter. <br>
+  If a parameter keeps oscillating back and forth, let's reduce Alpha_j for that parameter a little bit.
+</p>
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/1347f774-5e8a-4b22-af48-2d30bc272a52">
+<p>
+  We have to define the initial value of tf.keras.optimizers.Adam optimizer. <br>
+  We can try some large and some smaller values to see what gives us the fastest learning performance.
+</p>
+
+## Additional Layer Types
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/2f4a7403-3ccb-407b-b3ab-28739182d7aa">
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/0a4914c1-dd38-49e0-b0f3-80ff0d9a6be0">
+<p>
+  Convolutional layer: We are not going to look at the entire input image X instead, it's only going to look at the pixels in a limited region of the image. 
+</p>
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/8711b72c-5d36-4c61-8239-f987505eede6">
+<p>
+   This is the example of a neural network with the first and the second hidden layer also being a convolutional layer and then the output layer being a sigmoid layer. <br>
+  Sigmoid output is used in order to make a binary classification regarding the presence or absence of heart disease. 
+</p>
+
+# Back Propagation
+## 
 
 
