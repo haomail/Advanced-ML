@@ -90,7 +90,36 @@ Sum of all the activation function is up to 1. Because each of the activation fu
 - sparse refers to that y can only take on one of these 10 values.</p>
 
 ## Improved Implementation of Softmax
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/fb880b31-5da7-458e-ac7a-e18543109bad">
+<p>
+  We can avoid numerical roundoff errors by using the formula directly, without the intermediate term "a" (if we allow TF to do so). Because in softmax, this roundoff error could get worse. <br>
+  If we specify the equation directly, then TF can rearrange terms in this expression and come up with a more numerically accurate way to compute this loss function. It gives TF more flexibility in terms of how to compute this and whether or not it wants to compute a explicitly. <br>
+  logits = z as an intermediate value that can rearrange terms to make this become computed more accurately.
+</p>
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/76bec459-3391-4eaf-bda1-8628851fc9a7">
+<p>
+  If we specify the loss, TF can rearrange terms and compute this integral numerically accurate way. <br>
+  Why? If z is a very large number, then e to the z can become a very large number and by rearranging terms, TensorFlow can avoid some of these very small or very large numbers and therefore come up with more actress computation for the loss function.
+</p>
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/bc3b929a-5791-498e-aeee-5a3e9c1d2a6e">
+<p>
+  We've changed the output layer using linear activation. We put z_1 through z_10 through it.
+</p>
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/44a76105-7c1e-4aa7-8d90-1a7901727f7f">
+<p>
+  For logistic regression, we have to change to code in order to get the output value and map it through the logistic function in order to actually get the probability.
+</p>
+
 ## Classification with Multiple Outputs
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/841e6b41-d7e1-441c-96be-37a5b09bba5f">
+<p>
+  Multi-label classification problem: Where associate of each image, they could be multiple labels. 
+  Associated with a single input, image X are three different labels corresponding to whether or not there are any cars, buses, or pedestrians in the image. The target of the Y is actually a vector of three numbers (distinct from multi-class classification)
+</p>
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/15e6df87-1810-4290-8338-e400cec36d38">
+<p>
+  We can train a single neural network to simultaneously detect all three of cars, buses, and pedestrians. The output  is going to be a vector of three numbers. We can use a sigmoid activation function for each of these three nodes in the output layer, corresponding to the output of cars, buses, and pedestrians.
+</p>
 
 
 
