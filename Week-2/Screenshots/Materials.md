@@ -66,6 +66,31 @@ y >= 0</p> <br>
   If we were to still use a linear activation function for all the hidden layers and a logistic activation function for the output layer, then it turns out you can show that this model becomes equivalent to logistic regression.
 </p>
 
+# Multiclass Classification
+## Multiclass
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/7d801d24-901d-4ad2-a822-e4079c710acd">
+<p> Multiclass classification: More possible outputs so not just 0 or 1.</p>
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/f9aa446a-c0ee-4df6-ac87-77de860d5d4f">
+<p> We can have more classes to be classified and using boundary to separate them.</p>
+
+## Softmax
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/22cb65ca-3ff4-4049-a7e4-77580c54bff2">
+<p> With softmax regression, we can have more possible outputs. <br>
+Sum of all the activation function is up to 1. Because each of the activation function is a probability of 1/2/3/4 given by x. </p>
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/f113cb6b-ea56-4ec9-89ee-4f1f1f957887">
+<p> Softmax regression only uses the left side of logistic regression loss, that is -y log a1. But we only take the -log a1 part of it.</p>
+
+## Neural Network with Softmax Output
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/b82dd9f6-ab15-4137-9cb9-66db3c857dc7">
+<p> a's from softmax output depends on all the z's output.</p>
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/c3cbecdd-9354-4fff-9f3a-af88a4ec25c5">
+<p> SparseCategoricalCrossentropy: we're still classified y into categories. <br>
+- sparse refers to that y can only take on one of these 10 values.</p>
+
+## Improved Implementation of Softmax
+## Classification with Multiple Outputs
 
 
 
