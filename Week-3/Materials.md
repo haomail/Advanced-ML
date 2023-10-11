@@ -142,7 +142,41 @@ when we want to compute the test and training error, we dont have to include the
 </p>
 
 ## Learning Curves
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/130d4a6b-e0ce-4550-975f-55829c42027b">
+<p>
+  If the training set gets bigger, the better model and cross validation error goes down. <br>
+  If the training set gets bigger, the training set error get increases. <br>
+  It gets harder to fit all the training sets perfectly if we have more training examples. <br>
+</p>
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/f687c90c-8abb-4d42-b1b1-c84efbb63821">
+<p>
+  HIGH BIAS <br>
+  - As we get more training examples on simple linear function, our model wont change that much. <br>
+  - That's why the average error flattens out after a while <br>
+  - Jcv will get flatten out too, but Jcv >> Jtrain. <br>
+  - There is a big gap between baseline level of performance with Jcv and Jtrain (baseline is lower). That is HIGH BIAS model. <br> 
+  CONCLUSION <br>
+  If a learning algorithm has a high bias, getting more training data will not help that much. (We have to throw more training data added).
+</p>
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/0f27900b-b4bc-405e-8f8d-cb2372965412">
+<p>
+  HIGH VARIANCE <br>
+  - Even though it fits the training data very well, it doesn't generalize to the new data. <br>
+  - As the training size increases, Jtrain will going up. <br>
+  - Jcv >> Jtrain. The model is doing better on training set than the cross validation set (High variance model). <br>
+  - Baseline level of performance is between Jcv and Jtrain . <br>
+  CONCLUSION <br>
+  If we have a high variance model, increasing the training size could help a lot to lower the cross validation error get our algorithm to perform better.
+</p>
 
 ## Deciding What to Try Next Revised
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/9110b650-5dbf-4a59-8fa6-dcc1ff7d40ec">
 
 ## Bias/Variance and Neural Networks
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/23dc5373-86ea-4c7a-9282-a54eb141edf8">
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/71f8b53b-e665-4c79-85b4-80c5d99cccd2">
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/8d9910e9-c923-4ce7-963e-73a059537988">
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/8d64abbb-9b4a-4767-8e54-67e58cb797c5">
+
