@@ -118,6 +118,28 @@ when we want to compute the test and training error, we dont have to include the
 <img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/49d0e4f2-0a5d-463c-8969-09f280384f61">
 
 ## Establishing a Baseline Level of Performance
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/2ed7f962-6961-4229-b472-f02df14ec0cf">
+<p>
+  When we benchmark it to human level performance, the algorithm doing really well on the training set (0,2% higher difference) <br>
+  Cross validation error >> training error, the algorithm has variance problem instead of bias problem. <br>
+</p>
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/56f57883-173f-408a-9228-43c0426fcfd8">
+<p>
+  We have to establish a baseline level of performance before judging the training error. <br>
+  - Human level performance is often good benchmark when we use unstructured data (audio, images, text). <br>
+  - Previous implementation  or competitor's algorithm to establish a baseline level of performance. <br>
+  - Guess based on experience.
+</p>
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/cd418e32-e36c-45e0-b252-87a19e96c5c3">
+<p>
+  to judge if an algorithm has high bias or variance, we can: <br>
+  - look at the difference between training error and baseline level we hope to get to. <br>
+    - if this is large, we have a high bias problem. <br>
+  - look at the gap between training error and cross validation error. <br>
+    - if this is high, we have a high variance problem
+</p>
 
 ## Learning Curves
 
