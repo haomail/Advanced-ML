@@ -180,3 +180,13 @@ when we want to compute the test and training error, we dont have to include the
 <img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/8d9910e9-c923-4ce7-963e-73a059537988">
 <img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/8d64abbb-9b4a-4767-8e54-67e58cb797c5">
 
+# Machine Learning Development Process
+## Iterative Loop for ML Development
+
+## Error Analysis
+## Adding Data
+## Transfer Learning: 
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/992d6842-a0ab-43da-b95a-42509a7572f5">
+
+<img width="960" alt="image" src="https://github.com/haomail/Advanced-ML/assets/141924190/ec0c30c3-302e-48c8-a767-ef1e653de84c">
+
